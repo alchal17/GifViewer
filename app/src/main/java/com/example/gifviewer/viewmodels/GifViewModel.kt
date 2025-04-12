@@ -55,8 +55,8 @@ class GifViewModel(private val gifListReader: ApiReader<List<GifRequestData>>) :
                     currentPage.incrementAndGet()
                 }
             }
+            _isLoading.value = false
         }
-        _isLoading.value = false
     }
 
 }
